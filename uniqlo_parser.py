@@ -14,7 +14,6 @@ def parseUniqlo(items):
 		productName = item.find('a', {"class" : "name-link"}).text.strip()
 		productPrice = item.find('span', {"class" : "product-sales-price"}).text.strip()
 
-		name = item.findAll('a')[0].text.strip()
 		newItem = {"name": productName, "price": productPrice, 
 			"imageUrl" : imageUrl}
 
