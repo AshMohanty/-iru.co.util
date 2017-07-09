@@ -11,3 +11,9 @@ To Run CD into Ronin2
 then do:
 
 scrapy crawl Ronin(or whichever store you want) -o jsonname.json
+
+
+
+Fully Working: Elwood, Ronin 
+Partially Working: DSTLD
+Not Working: HM 
