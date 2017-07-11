@@ -14,9 +14,7 @@ scrapy crawl Ronin(or whichever store you want) -o jsonname.json
 
 
 
-Fully Working: Elwood, Ronin 
-Partially Working: DSTLD
-Not Working: HM 
+Fully Working: Elwood, Ronin,CottonOn, Stussy || Partially Working: DSTLD || Not Working: HM 
 
 
 Ignore Scrapers was trying to do some branching thing and it didnt work 
