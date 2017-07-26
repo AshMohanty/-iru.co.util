@@ -14,7 +14,5 @@ scrapy crawl Ronin(or whichever store you want) -o jsonname.json
 
 
 
-Fully Working: Elwood, Ronin,CottonOn, Stussy, Urban Outfitters, Uniqlo || Partially Working: DSTLD, Adidas|| Not Working: HM 
+Fully Working: all except HM Adidas || Partially Working: || Not Working: u
 
-
-Ignore Scrapers was trying to do some branching thing and it didnt work 
