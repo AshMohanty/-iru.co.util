@@ -24,14 +24,14 @@ class ElwoodSpider(scrapy.Spider):
         price = response.xpath('//*[@class="product-price"]/text()').extract_first()
         image_url = response.xpath('//*[@class="mainimage"]/@src').extract_first()
         image_url = image_url.replace('//', 'http://')
-        description = response.xpath('//*[@id="product-description"]/div[3]/text()').extract()
-        destination_url = response.xpath('//link[@rel="canonical"]/@href').extract()
+        description = response.xpath('//*[@id="product-description"]/div[3]/text()').extract_first()
+        destination_url = response.xpath('//link[@rel="canonical"]/@href').extract_first()
+
         yield {
-                'description': description,
-                'destination_url': destination_url,
-                'id': 0,
-                'image_url': image_url,
-                'price': price,
-                'ranking': 0,
-                'title': title
-                }
+            'description': description,
+            'destinationUrl': destination_url,
+            'imgUrl': image_url,
+            'price': price,
+            'ranking': 0,
+            'title': title
+            }
